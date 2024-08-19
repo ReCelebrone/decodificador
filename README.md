@@ -18,6 +18,6 @@ A solicitação exigia regras específicas de execução na lógica, além dos b
 - Escreva o texto que deseja criptografar ou descriptografar
 - O texto não pode conter acentos e nem caracteres especiais
 - Com o botão copiar, permite que você a copiar o texto criptografado ou descriptografado para que cole no campo 'Digite seu texto" para realizar o caminho inverso se assim o desejar
-- Para visualizar a página e realizar o teste, [<a href="[URL](https://decodificador-gules.vercel.app/index.html)">clique aqui</a>](https://decodificador-gules.vercel.app/index.html)
+- Para visualizar a página e realizar o teste, <a href= "https://decodificador-gules.vercel.app/index.html">Cique aqui</a>
 
 
