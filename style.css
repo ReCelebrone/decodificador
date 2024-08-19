@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: #D8DFE8;
+    --cor-quaternaria: #FFFFFF;
+    --cor-avisos: #343A40;
+
+    --fonte-primaria: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================================================================================*/
+/* Background da tela toda*/
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    overflow: hidden;
+}
+
+/*======================================================================================*/
+/* Classe: Cabeçalho com logotipo da Alura */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 2.1rem;
+    background-color: var(--cor-primaria);
+}
+.cabecalho__logo {
+    height: 2.5rem 2.1rem;
+}
+
+/*=========================================================================================*/
+/* Classe: Grupo "mãe" */
+
+.apresentacao{
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Classe: Espaço onde tudo será disposto dentro do grupo "mãe" */
+
+.apresentacao__conteudo{
+    width: 42.5rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Classe: Campo para inserir o texto a ser criptografado */
+
+.area__texto {
+    width: 42.5rem;
+    padding: 0.5rem;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    background-color: var(--cor-primaria);
+    font-weight: 400;
+    margin-top: none;
+    border: none;
+    border-radius: 0;
+    resize: none;  
+    outline: none;
+}
+
+.area__texto::placeholder {
+    color: var(--cor-secundaria);    
+}
+
+/* Classe: Texto informativo do "i" acima dos botões */
+
+.icone__info {
+    display: flex;
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--fonte-primaria);
+    font-size: 0.75rem;
+    color: var(--cor-avisos);
+    font-weight: 400;
+    margin-top: 30%;
+}
+
+/* Classe: Espaço onde os botões ficarão */
+
+.apresentacao__botao {
+    display: flex;
+    width: 42.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Botão de criptografia */
+
+.botao__criptografar {
+    width: 20.5rem;
+    padding: 1.5rem;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quaternaria);
+    border: none;
+    border-radius: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Botão de descriptografia */
+
+.botao__descriptografar {
+    width: 20.5rem;
+    padding: 1.5rem;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    outline-color: 0.06rem solid var(--cor-secundaria);
+    border-radius: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*=========================================================================================*/
+
+/* Classe: Retângulo branco na lateral direita da tela */
+
+/* Retângulo branco e alinhamento do que tem dentro dele */
+
+.espaco__ilustracao {
+    display: flex;
+    width: 25rem;
+    height: 29.5rem;
+    background-color: var(--cor-quaternaria);
+    border-radius: 2rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+/* Texto principal do espaço da ilustração */
+
+.aviso__destaque {
+    width: 25rem;
+    border: 2rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--cor-avisos);
+    font-weight: 700;
+    margin-top: 1.25rem;
+    gap:1rem;
+    text-align: center;
+}
+
+/* Texto secundário do espaço da ilustração */
+
+.aviso__subdstaque {
+    width: 25rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    color: var(--cor-avisos);
+    font-weight: 400;
+    margin-top: 0.6rem;
+    gap: 15.1rem;
+    text-align: center;
+}
+
+/*=========================================================================================*/
+
+/* Classe: Espaço do rodapé */
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-top: 3%;
+}

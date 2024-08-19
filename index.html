@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador texto alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="cabecalho">
+    <div class="cabecalho__logo">
+        <img src="Frame 6.svg" alt="Logo da Alura">
+    </div>
+</header>
+<body>  
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea class="area__texto" id="inputText" placeholder="Digite seu texto" rows="4" cols="50"></textarea>
+            <p class="apresentacao__conteudo__texto">
+                <a class="icone__info"> <img src="bi_exclamation-circle-fill.svg">
+                Apenas letras minúsculas e sem acento.</a>
+                <div class="apresentacao__botao">                   
+                    <button class="botao__criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="botao__descriptografar" onclick="descriptografar()">Descriptografar</button>         
+                </div>
+        </section>
+        <section class="espaco__ilustracao">
+            <img src="High quality products 1 1.png" alt="Ilustração de uma moça segurando uma lupa">
+            <p class="aviso__destaque" id="message">Nenhuma mensagem encontrada</p>
+            <p class="aviso__subdstaque">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Realizado por Renata Celebrone para Alura</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

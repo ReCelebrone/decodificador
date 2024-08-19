@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-criptografar</title>
+    <link rel="stylesheet" href="style-criptografar.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <img src="Frame 6.svg" alt="Logo da Alura">
+        </div>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea class="area__texto" id="inputText" placeholder="Digite seu texto" rows="4" cols="50"></textarea>
+            <p class="apresentacao__conteudo__texto">
+                <a class="icone__info"> <img src="bi_exclamation-circle-fill.svg">
+                Apenas letras minúsculas e sem acento.</a>
+                <div class="apresentacao__botao">                   
+                    <button class="botao__criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="botao__descriptografar" onclick="descriptografar()">Descriptografar</button>    
+                </div>
+        </section>
+        <section class="espaco__ilustracao">
+            <p class="texto__ilustracao" id="outputText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+            <button class="botao__copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Realizado por Renata Celebrone para Alura</p>
+    </footer>
+
+    <script src="app-criptografar.js"></script>
+</body>
+</html>
